@@ -1,19 +1,50 @@
-print("Hello World!")
-print("I am learning Python.")
-print("It is awesome!")
+x = 4
+username = "ali"
 
-print("This will work!")
-print("This will also work!")
+x = "Hi"
 
-print("this is the text in line", end=" ")
-print("this is the text nexto line")
+x = str(3)
+y = int(10.5)
 
 
-print(3)
-print(50)
+print(username, x, y)
 
-print(3 + 3)
-print(2 * 4)
 
-print("I'm", 24, "Years Old!")
-print("I'm" + " 24 " + "Years Old!")
+print(type(username), type(y))
+
+
+username = "ali"
+email = "email"
+
+print(username, email)
+
+EMAIL = "email2"
+
+print(email, EMAIL)
+
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+x = y = z = "Ali"
+print(x, y, z)
+
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+
+x = "shit"
+
+
+def myfunc():
+    global x
+    print("Python is " + x)
+
+
+myfunc()
