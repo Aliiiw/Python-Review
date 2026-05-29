@@ -1,88 +1,50 @@
-print("It's alright")
-print("He is called 'Johnny'")
-print('He is called "Johnny"')
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+a = 200
+b = 33
+
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
 
 
-a = """Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""
-print(a)
+print(bool("Hello"))
+print(bool(15))
+
+x = "Hello"
+y = 15
+
+print(bool(x))
+print(bool(y))
 
 
-a = """Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""
-print(a)
+class myclass:
+    def __len__(self):
+        return 0
 
 
-a = "Hello, World!"
-print(a[1])
-
-for x in "banana":
-    print(x)
+myobj = myclass()
+print(bool(myobj))
 
 
-a = "Hello, World!"
-print(len(a))
-
-txt = "The best things in life are free!"
-print("free" in txt)
-
-txt = "The best things in life are free!"
-if "free" in txt:
-    print("Yes, 'free' is present.")
-
-txt = "The best things in life are free!"
-print("expensive" not in txt)
+def myFunction():
+    return True
 
 
-b = "Hello, World!"
-print(b[2:5])
+print(myFunction())
 
 
-b = "Hello, World!"
-print(b[:5])  # 5 not included
-
-b = "Hello, World!"
-print(b[2:])
+def myFunction():
+    return True
 
 
-b = "Hello, World!"
-print(b[-5:-2])
+if myFunction():
+    print("YES!")
+else:
+    print("NO!")
 
-a = "Hello, World!"
-print(a.upper())
-
-a = "Hello, World!"
-print(a.lower())
-
-a = " Hello, World! "
-print(a.strip())  # returns "Hello, World!"
-
-a = "Hello, World!"
-print(a.replace("H", "J"))
-
-a = "Hello, World!"
-print(a.split(","))  # returns ['Hello', ' World!']
-
-age = 36
-# This will produce an error:
-txt = f"My name is John, I am {age}"
-print(txt)
-
-price = 59
-txt = f"The price is {price} dollars"
-print(txt)
-
-price = 59
-txt = f"The price is {price:.2f} dollars"
-print(txt)
-
-txt = f"The price is {20 * 59} dollars"
-print(txt)
-
-
-txt = 'We are the so-called "Vikings" from the north.'
-print(txt)
+x = 200
+print(isinstance(x, int))
