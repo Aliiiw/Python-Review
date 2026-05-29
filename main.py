@@ -1,50 +1,75 @@
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
+# x = 15
+# y = 4
 
-a = 200
-b = 33
+# print(x + y)
+# print(x - y)
+# print(x * y)
+# print(x / y)
+# print(x % y)
+# print(x**y)
+# print(x // y)
 
-if b > a:
-    print("b is greater than a")
-else:
-    print("b is not greater than a")
+# x = 12
+# y = 5
 
-
-print(bool("Hello"))
-print(bool(15))
-
-x = "Hello"
-y = 15
-
-print(bool(x))
-print(bool(y))
+# print(x / y)
 
 
-class myclass:
-    def __len__(self):
-        return 0
+# x = 12
+# y = 5
+
+# print(x // y)
 
 
-myobj = myclass()
-print(bool(myobj))
+# numbers = [1, 2, 3, 4, 5]
+
+# if (count := len(numbers)) > 3:
+#     print(f"List has {count} elements")
 
 
-def myFunction():
-    return True
+# num = 6
+
+# x = "WEEKEND!" if num > 5 else "Workday"
+
+# print(x)
 
 
-print(myFunction())
+# x = 5
+# y = 3
+
+# print(x == y)
+# print(x != y)
+# print(x > y)
+# print(x < y)
+# print(x >= y)
+# print(x <= y)
+
+# x = 5
+
+# print(1 < x < 10)
+
+# print(1 < x and x < 10)
+
+# x = ["apple", "banana"]
+# y = ["apple", "banana"]
+# z = x
+
+# print(x is z)
+# print(x is y)
+# print(x == y)
+
+# fruits = ["apple", "banana", "cherry"]
+
+# print("banana" in fruits)
+
+# text = "Hello World"
+
+# print("H" in text)
+# print("hello" in text)
+# print("z" not in text)
 
 
-def myFunction():
-    return True
+# print(6 & 3)
+# print(6 | 3)
 
-
-if myFunction():
-    print("YES!")
-else:
-    print("NO!")
-
-x = 200
-print(isinstance(x, int))
+print(5 + 4 - 7 + 3)
