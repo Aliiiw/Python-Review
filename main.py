@@ -1,50 +1,42 @@
-x = 4
-username = "ali"
-
-x = "Hi"
-
-x = str(3)
-y = int(10.5)
+x = 1j
 
 
-print(username, x, y)
+print(type(x))
 
 
-print(type(username), type(y))
+x = 35e3
+y = 12e4
+z = -87.7e100
 
+print(type(x))
+print(type(y))
+print(type(z))
 
-username = "ali"
-email = "email"
+x = 3 + 5j
+y = 5j
+z = -5j
 
-print(username, email)
+print(type(x))
+print(type(y))
+print(type(z))
 
-EMAIL = "email2"
+x = 1  # int
+y = 2.8  # float
+z = 1j  # complex
 
-print(email, EMAIL)
+# convert from int to float:
+a = float(x)
 
-myvar = "John"
-my_var = "John"
-_my_var = "John"
-myVar = "John"
-MYVAR = "John"
-myvar2 = "John"
+# convert from float to int:
+b = int(y)
 
-x = y = z = "Ali"
-print(x, y, z)
+# convert from int to complex:
+c = complex(x)
 
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
+print(a)
+print(b)
+print(c)
 
-
-x = "shit"
-
-
-def myfunc():
-    global x
-    print("Python is " + x)
-
-
-myfunc()
+print(type(a))
+print(type(b))
+print(type(c))
