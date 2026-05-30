@@ -1,34 +1,33 @@
-import re
-
-# txt = "The rain in Spain"
-# x = re.findall("ai", txt)
-# print(x)
-
-
-# txt = "The rain in Spain"
-# x = re.findall("Portugal", txt)
-# print(x)
+try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("Something else went wrong")
 
 
-# txt = "The rain in Spain"
-# x = re.search("\s", txt)
-
-# print("The first white-space character is located in position:", x.start())
-
-# txt = "The rain in Spain"
-# x = re.search("Portugal", txt)
-# print(x)
+try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The 'try except' is finished")
 
 
-# txt = "The rain in Spain"
-# x = re.split("\s", txt)
-# print(x)
+try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")
 
-# txt = "The rain in Spain"
-# x = re.split("\s", txt, 1)
-# print(x)
-
-
-txt = "The rain in Spain"
-x = re.sub("\s", "9", txt)
-print(x)
+try:
+    f = open("demofile.txt")
+    try:
+        f.write("Lorum Ipsum")
+    except:
+        print("Something went wrong when writing to the file")
+    finally:
+        f.close()
+except:
+    print("Something went wrong when opening the file")
