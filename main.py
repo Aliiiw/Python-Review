@@ -1,32 +1,29 @@
-import math
+import json
 
-# x = min(5, 10, 25)
-# y = max(5, 10, 25)
+# # some JSON:
+# x = '{ "name":"John", "age":30, "city":"New York"}'
 
-# print(x)
+# # parse x:
+# y = json.loads(x)
+
+# # the result is a Python dictionary:
+# print(y["age"])
+
+
+# x = {"name": "John", "age": 30, "city": "New York"}
+
+# # convert into JSON:
+# y = json.dumps(x)
+
+# # the result is a JSON string:
 # print(y)
 
-
-# x = abs(-7.25)
-
-# print(x)
-
-
-# x = pow(4, 3)
-
-# print(x)
-
-
-# x = math.sqrt(64)
-
-# print(x)
-
-# x = math.ceil(1.4)
-# y = math.floor(1.4)
-
-# print(x)  # returns 2
-# print(y)  # returns 1
-
-x = math.pi
-
-print(x)
+print(json.dumps({"name": "John", "age": 30}))
+print(json.dumps(["apple", "bananas"]))
+print(json.dumps(("apple", "bananas")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))
