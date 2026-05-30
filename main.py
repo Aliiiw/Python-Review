@@ -1,29 +1,34 @@
-import json
+import re
 
-# # some JSON:
-# x = '{ "name":"John", "age":30, "city":"New York"}'
-
-# # parse x:
-# y = json.loads(x)
-
-# # the result is a Python dictionary:
-# print(y["age"])
+# txt = "The rain in Spain"
+# x = re.findall("ai", txt)
+# print(x)
 
 
-# x = {"name": "John", "age": 30, "city": "New York"}
+# txt = "The rain in Spain"
+# x = re.findall("Portugal", txt)
+# print(x)
 
-# # convert into JSON:
-# y = json.dumps(x)
 
-# # the result is a JSON string:
-# print(y)
+# txt = "The rain in Spain"
+# x = re.search("\s", txt)
 
-print(json.dumps({"name": "John", "age": 30}))
-print(json.dumps(["apple", "bananas"]))
-print(json.dumps(("apple", "bananas")))
-print(json.dumps("hello"))
-print(json.dumps(42))
-print(json.dumps(31.76))
-print(json.dumps(True))
-print(json.dumps(False))
-print(json.dumps(None))
+# print("The first white-space character is located in position:", x.start())
+
+# txt = "The rain in Spain"
+# x = re.search("Portugal", txt)
+# print(x)
+
+
+# txt = "The rain in Spain"
+# x = re.split("\s", txt)
+# print(x)
+
+# txt = "The rain in Spain"
+# x = re.split("\s", txt, 1)
+# print(x)
+
+
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+print(x)
