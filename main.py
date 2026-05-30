@@ -1,82 +1,157 @@
-# thistuple = ("apple", "banana", "cherry", "apple", "cherry")
-# print(thistuple)
+# thisset = {"apple", "banana", "cherry"}
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry", "apple"}
+
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry", True, 1, 2}
+
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry", False, True, 0}
+
+# print(thisset)
 
 
-# thistuple = ("apple", "banana", "cherry")
-# print(len(thistuple))
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {1, 5, 7, 9, 3}
+# set3 = {True, False, False}
 
-# thistuple = ("apple",)
-# print(type(thistuple))
+# set1 = {"abc", 34, True, 40, "male"}
 
-# # NOT a tuple
-# thistuple = "apple"
-# print(type(thistuple))
+# print(set1)
 
 
-# tuple1 = ("apple", "banana", "cherry")
-# tuple2 = (1, 5, 7, 9, 3)
-# tuple3 = (True, False, False)
+# thisset = {"apple", "banana", "cherry"}
 
-# tuple1 = ("abc", 34, True, 40, "male")
+# for x in thisset:
+#     print(x)
 
-# print(tuple1)
+# thisset = {"apple", "banana", "cherry"}
 
-# thistuple = ("apple", "banana", "cherry")
-# print(thistuple[1])
+# print("banana" in thisset)
 
-# thistuple = ("apple", "banana", "cherry")
-# print(thistuple[-1])
+# thisset = {"apple", "banana", "cherry"}
 
-# thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-# print(thistuple[2:5])
+# thisset.add("orange")
 
-# x = ("apple", "banana", "cherry")
-# y = list(x)
-# y[1] = "kiwi"
-# x = tuple(y)
+# print(thisset)
+
+
+# thisset = {"apple", "banana", "cherry"}
+# tropical = {"pineapple", "mango", "papaya"}
+
+# thisset.update(tropical)
+
+# print(thisset)
+
+
+# thisset = {"apple", "banana", "cherry"}
+# mylist = ["kiwi", "orange"]
+
+# thisset.update(mylist)
+
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry"}
+
+# thisset.remove("banana")
+
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry"}
+
+# thisset.discard("banana")
+
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry"}
+
+# x = thisset.pop()
 
 # print(x)
 
-# thistuple = ("apple", "banana", "cherry")
-# y = list(thistuple)
-# y.remove("apple")
-# thistuple = tuple(y)
-# print(thistuple)
+# print(thisset)
 
-# fruits = ("apple", "banana", "cherry")
+# thisset = {"apple", "banana", "cherry"}
 
-# green, yellow, red = fruits
+# thisset.clear()
 
-# print(green)
-# print(yellow)
-# print(red)
+# print(thisset)
 
 
-# fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
 
-# green, yellow, *red = fruits
-
-# print(green)
-# print(yellow)
-# print(red)
+# set3 = set1.union(set2)
+# print(set3)
 
 
-# fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
 
-# green, *tropic, red = fruits
+# set3 = set1 | set2
+# print(set3)
 
-# print(green)
-# print(tropic)
-# print(red)
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+# set3 = {"John", "Elena"}
+# set4 = {"apple", "bananas", "cherry"}
+
+# myset = set1.union(set2, set3, set4)
+# print(myset)
 
 
-# tuple1 = ("a", "b", "c")
-# tuple2 = (1, 2, 3)
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+# set3 = {"John", "Elena"}
+# set4 = {"apple", "bananas", "cherry"}
 
-# tuple3 = tuple1 + tuple2
-# print(tuple3)
+# myset = set1 | set2 | set3 | set4
+# print(myset)
 
-fruits = ("apple", "banana", "cherry")
-mytuple = fruits * 2
 
-print(mytuple)
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set3 = set1.intersection(set2)
+# print(set3)
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set3 = set1 & set2
+# print(set3)
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set1.intersection_update(set2)
+
+# print(set1)
+
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set3 = set1.difference(set2)
+
+# print(set3)
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set3 = set1 - set2
+# print(set3)
+
+# set1 = {"apple", "banana", "cherry"}
+# set2 = {"google", "microsoft", "apple"}
+
+# set3 = set1.symmetric_difference(set2)
+
+# print(set3)
+
+x = frozenset({"apple", "banana", "cherry"})
+print(x)
+print(type(x))
