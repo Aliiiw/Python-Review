@@ -1,33 +1,28 @@
-try:
-    print(x)
-except NameError:
-    print("Variable x is not defined")
-except:
-    print("Something else went wrong")
+# x = None
+# print(x)
+
+# x = None
+# print(type(x))
+
+# result = None
+# if result is None:
+#     print("No result yet")
+# else:
+#     print("Result is ready")
+
+# result = None
+# if result is not None:
+#     print("Result is ready")
+# else:
+#     print("No result yet")
 
 
-try:
-    print(x)
-except:
-    print("Something went wrong")
-finally:
-    print("The 'try except' is finished")
+print(bool(None))
 
 
-try:
-    print("Hello")
-except:
-    print("Something went wrong")
-else:
-    print("Nothing went wrong")
+def myfunc():
+    x = 5
 
-try:
-    f = open("demofile.txt")
-    try:
-        f.write("Lorum Ipsum")
-    except:
-        print("Something went wrong when writing to the file")
-    finally:
-        f.close()
-except:
-    print("Something went wrong when opening the file")
+
+x = myfunc()
+print(x)
