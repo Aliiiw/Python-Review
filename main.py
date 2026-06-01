@@ -1,137 +1,109 @@
-# class MyClass:
-#     x = 5
-
-
-# p = MyClass()
-
-# # del p
-
-
-# p1 = MyClass()
-# p2 = MyClass()
-# p3 = MyClass()
-
-# print(p1.x)
-# print(p2.x)
-# print(p3.x)
-
-
 # class Person:
-#     pass
-
-
-""" "
-All classes have a built-in method called __init__(), which is always executed when the class is being initiated.
-
-The __init__() method is used to assign values to object properties, or to perform operations that are necessary when the object is being created.
-"""
-
-# class Person:
-#     def __init__(self, name, age):
+#     def __init__(self, name):
 #         self.name = name
-#         self.age = age
-
-
-# p1 = Person("Emil", 36)
-
-# print(p1.name)
-# print(p1.age)
-
-
-# class Person:
-#     pass
-
-
-# p1 = Person()
-# p1.name = "Tobias"
-# p1.age = 25
-
-# print(p1.name)
-# print(p1.age)
-
-
-# class Person:
-#     def __init__(self, name, age=18):
-#         self.name = name
-#         self.age = age
-
-
-# p1 = Person("Emil")
-# p2 = Person("Tobias", 25)
-
-# print(p1.name, p1.age)
-# print(p2.name, p2.age)
-
-
-# class Person:
-#     def __init__(self, name, age, city, country):
-#         self.name = name
-#         self.age = age
-#         self.city = city
-#         self.country = country
-
-
-# p1 = Person("Linus", 30, "Oslo", "Norway")
-
-# print(p1.name)
-# print(p1.age)
-# print(p1.city)
-# print(p1.country)
-
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
 
 #     def greet(self):
 #         print("Hello, my name is " + self.name)
 
+#     def hi(): #Note: All methods must have self as the first parameter.
 
-# p1 = Person("Emil", 25)
+
+#         print("hi")
+
+
+# p1 = Person("Emil")
 # p1.greet()
+# p1.hi() #Note: All methods must have self as the first parameter.
+
+
+# class Calculator:
+#     def add(self, a, b):
+#         return a + b
+
+#     def multiply(self, a, b):
+#         return a * b
+
+
+# calc = Calculator()
+# print(calc.add(5, 3))
+# print(calc.multiply(4, 7))
 
 
 # class Person:
-#     def __init__(self, name):
+#     def __init__(self, name, age):
 #         self.name = name
+#         self.age = age
 
-#     def printName(self):
-#         print(self.name)
+#     def get_info(self):
+#         return f"{self.name} is {self.age} years old"
 
 
-# p1 = Person("Tobias")
-# p2 = Person("Linus")
-
-# p1.printname()
-# p2.printname()
+# p1 = Person("Tobias", 28)
+# print(p1.get_info())
 
 
 # class Person:
-#     def __init__(myobject, name, age):
-#         myobject.name = name
-#         myobject.age = age
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-#     def greet(abc):
-#         print("Hello, my name is " + abc.name)
+#     def celebrate_birthday(self):
+#         self.age += 1
+#         print(f"Happy birthday! You are now {self.age}")
+
+
+# p1 = Person("Linus", 25)
+# p1.celebrate_birthday()
+# p1.celebrate_birthday()
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
 
 # p1 = Person("Emil", 36)
-# p1.greet()
+# print(p1)
 
 
-# class Car:
-#     def __init__(self, brand, model, year):
-#         self.brand = brand
-#         self.model = model
-#         self.year = year
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-#     def display_info(self):
-#         print(f"{self.year} {self.brand} {self.model}")
+#     def __str__(self):
+#         return f"{self.name} ({self.age})"
 
 
-# car1 = Car("Toyota", "Corolla", 2020)
-# car1.display_info()
+# p1 = Person("Tobias", 36)
+# print(p1)
+
+
+# class Playlist:
+#     def __init__(self, name):
+#         self.name = name
+#         self.songs = []
+
+#     def add_song(self, song):
+#         self.songs.append(song)
+#         print(f"Added: {song}")
+
+#     def remove_song(self, song):
+#         if song in self.songs:
+#             self.songs.remove(song)
+#             print(f"Removed: {song}")
+
+#     def show_songs(self):
+#         print(f"Playlist '{self.name}':")
+#         for song in self.songs:
+#             print(f"- {song}")
+
+
+# my_playlist = Playlist("Favorites")
+# my_playlist.add_song("Bohemian Rhapsody")
+# my_playlist.add_song("Stairway to Heaven")
+# my_playlist.show_songs()
 
 
 # class Person:
@@ -139,136 +111,24 @@ The __init__() method is used to assign values to object properties, or to perfo
 #         self.name = name
 
 #     def greet(self):
-#         return "Hello, " + self.name
-
-#     def welcome(self):
-#         message = self.greet()
-#         print(message + "! Welcome to our website.")
-
-
-# p1 = Person("Tobias")
-# p1.welcome()
-
-
-# class Car:
-#     def __init__(self, brand):
-#         self.brand = brand
-
-#     def show(self):
-#         print(self.brand)
-
-
-# c1 = Car("Ford")
-# c1.show()
-
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-
-
-# p1 = Person("Emil", 36)
-
-# print(p1.name)
-# print(p1.age)
-
-
-# class Car:
-#     def __init__(self, brand, model):
-#         self.brand = brand
-#         self.model = model
-
-
-# car1 = Car("Toyota", "Corolla")
-
-# print(car1.brand)
-# print(car1.model)
-
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-
-
-# p1 = Person("Tobias", 25)
-# print(p1.age)
-
-# p1.age = 26
-# print(p1.age)
-
-
-# class Person:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-
-
-# p1 = Person("Linus", 30)
-
-# del p1.age
-
-# print(p1.name)  # This works
-# # print(p1.age) # This would cause an error
-
-
-# class Person:
-#     species = "Human"  # Class property
-
-#     def __init__(self, name):
-#         self.name = name  # Instance property
+#         print("Hello!")
 
 
 # p1 = Person("Emil")
-# p2 = Person("Tobias")
 
-# print(p1.name)
-# print(p2.name)
-# print(p1.species)
-# print(p2.species)
+# del Person.greet
+
+# p1.greet()  # This will cause an error
 
 
-# class Person:
-#     lastname = ""
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.hight = height
 
-#     def __init__(self, name):
-#         self.name = name
-
-
-# p1 = Person("Linus")
-# p2 = Person("Emil")
-
-# Person.lastname = "Refsnes"
-
-# print(p1.lastname)
-# print(p2.lastname)
+    def area(self):
+        return self.width * self.hight
 
 
-# class Person:
-#     def __init__(self, name):
-#         self.name = name
-
-
-# p1 = Person("Tobias")
-
-# p1.age = 25
-# p1.city = "Oslo"
-
-# print(p1.name)
-# print(p1.age)
-# print(
-#     p1.city
-# )  # Note: Adding properties this way only adds them to that specific object, not to all objects of the class.
-
-
-class Student:
-    def __init__(self, name, grade):
-        self.name = name
-        self.grade = grade
-
-
-s1 = Student("Anna", "A")
-print(s1.grade)
-s1.grade = "B"
-print(s1.grade)
+r1 = Rectangle(5, 3)
+print(r1.area())
