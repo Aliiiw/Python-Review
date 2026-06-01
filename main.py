@@ -1,28 +1,21 @@
-# x = None
-# print(x)
+# x = ("apple", "banana", "cherry")
+# y = enumerate(x)
 
-# x = None
-# print(type(x))
+# print(y)
 
-# result = None
-# if result is None:
-#     print("No result yet")
-# else:
-#     print("Result is ready")
+from typing import List
 
-# result = None
-# if result is not None:
-#     print("Result is ready")
-# else:
-#     print("No result yet")
+a = ("John", "Charles", "Mike")
+b = ("Jenny", "Christy", "Monica")
 
+x = zip(a, b)
 
-print(bool(None))
-
-
-def myfunc():
-    x = 5
-
-
-x = myfunc()
 print(x)
+
+
+def greet(names: List[str]) -> str:
+    return f"Hello {', '.join(names)}"
+
+
+result = greet(["Emil", "Linus"])
+print(result)
