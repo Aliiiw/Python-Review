@@ -1,79 +1,54 @@
-# # # class Outer:
-# # #     def __init__(self):
-# # #         self.name = "Outer Class"
+# # # # # # f = open("demofile.txt")
 
-# # #     class Inner:
-# # #         def __init__(self):
-# # #             self.name = "Inner Class"
+# # # # # # print(f.read())
 
-# # #         def display(self):
-# # #             print("This is the inner class")
+# # # # # with open("demofile.txt") as f:
+# # # # #     print(f.read())
 
+# # # # f = open("demofile.txt")
+# # # # print(f.readline())
+# # # # f.close()
 
-# # # outer = Outer()
-# # # print(outer.name)
+# # # with open("demofile.txt") as f:
+# # #     print(f.read(5))
 
-
-# # class Outer:
-# #     def __init__(self):
-# #         self.name = "Outer"
-
-# #     class Inner:
-# #         def __init__(self):
-# #             self.name = "Inner"
-
-# #         def display(self):
-# #             print("Hello from inner class")
+# # # with open("demofile.txt") as f:
+# # #     print(f.readline())
 
 
-# # outer = Outer()
-# # inner = outer.Inner()
-# # inner.display()
+# # # with open("demofile.txt") as f:
+# # #     print(f.readline())
+# # #     print(f.readline())
 
 
-# class Outer:
-#     def __init__(self):
-#         self.name = "Emil"
+# # with open("demofile.txt") as f:
+# #     for x in f:
+# #         print(x)
 
-#     class Inner:
-#         def __init__(self, outer):
-#             self.outer = outer
+# # with open("demofile.txt", "a") as f:
+# #     f.write("Now the file has more content!")
 
-#         def display(self):
-#             print(f"Outer class name: {self.outer.name}")
+# # # open and read the file after the appending:
+# # with open("demofile.txt") as f:
+# #     print(f.read())
 
+# # with open("demofile.txt", "w") as f:
+# #     f.write("Woops! I have deleted the content!")
 
-# outer = Outer()
-# inner = outer.Inner(outer)
-# inner.display()
+# # # open and read the file after the overwriting:
+# # with open("demofile.txt") as f:
+# #     print(f.read())
 
-
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-        self.engine = self.Engine()
-
-    class Engine:
-        def __init__(self):
-            self.status = "Off"
-
-        def start(self):
-            self.status = "Running"
-            print("Engine started")
-
-        def stop(self):
-            self.status = "Off"
-            print("Engine stopped")
-
-    def drive(self):
-        if self.engine.status == "Running":
-            print(f"Driving the {self.brand} {self.model}")
-        else:
-            print("Start the engine first!")
+# # f = open("myfile.txt", "x")
 
 
-car = Car("Toyota", "Corolla")
-car.drive()
-car.engine.start()
-car.drive()
+# import os
+
+# # os.remove("demofile.txt")
+
+import os
+
+if os.path.exists("demofile.txt"):
+    os.remove("demofile.txt")
+else:
+    print("The file does not exist")
