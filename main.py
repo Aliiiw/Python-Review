@@ -1,43 +1,83 @@
-class Person:
-    def __init__(self, fname, lname):
-        self.firstname = fname
-        self.lastname = lname
+# # class Car:
+# #     def __init__(self, brand, model):
+# #         self.brand = brand
+# #         self.model = model
 
-    def printname(self):
-        print(self.firstname, self.lastname)
-
-
-# Use the Person class to create an object, and then execute the printname method:
-
-x = Person("John", "Doe")
-x.printname()
+# #     def move(self):
+# #         print("Drive!")
 
 
-# class Student(Person):
+# # class Boat:
+# #     def __init__(self, brand, model):
+# #         self.brand = brand
+# #         self.model = model
+
+# #     def move(self):
+# #         print("Sail!")
+
+
+# # class Plane:
+# #     def __init__(self, brand, model):
+# #         self.brand = brand
+# #         self.model = model
+
+# #     def move(self):
+# #         print("Fly!")
+
+
+# # car1 = Car("Ford", "Mustang")  # Create a Car object
+# # boat1 = Boat("Ibiza", "Touring 20")  # Create a Boat object
+# # plane1 = Plane("Boeing", "747")  # Create a Plane object
+
+# # for x in (car1, boat1, plane1):
+# #     x.move()
+
+
+# class Vehicle:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
+
+#     def move(self):
+#         print("Move!")
+
+
+# class Car(Vehicle):
 #     pass
 
 
-# x = Student("Mike", "Olsen")
-# x.printname()
+# class Boat(Vehicle):
+#     def move(self):
+#         print("Sail!")
 
 
-# class Student(Person):
-#     def __init__(self, fname, lname):
-#         Person.__init__(self, fname, lname)
+# class Plane(Vehicle):
+#     def move(self):
+#         print("Fly!")
 
 
-# class Student(Person):
-#     def __init__(self, fname, lname):
-#         super().__init__(fname, lname)
-#         self.graduationyear = 2019
+# car1 = Car("Ford", "Mustang")  # Create a Car object
+# boat1 = Boat("Ibiza", "Touring 20")  # Create a Boat object
+# plane1 = Plane("Boeing", "747")  # Create a Plane object
+
+# for x in (car1, boat1, plane1):
+#     print(x.brand)
+#     print(x.model)
+#     x.move()
 
 
-class Student(Person):
-    def __init__(self, fname, lname, year):
-        super().__init__(fname, lname)
-        self.graduationyear = year
+class Cat:
+    def sound(self):
+        print("Meow")
 
 
-x = Student("Mike", "Olsen", 2019)
+class Fox:
+    def sound(self):
+        print("Wa-pa-pa-pa-pa-pow!")
 
-print(x.firstname)
+
+c1 = Cat()
+f1 = Fox()
+
+c1.sound()
+f1.sound()
